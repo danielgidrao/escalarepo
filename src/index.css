@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Tokens do DESIGN-airbnb.md (Inter como substituta da Airbnb Cereal VF) */
+@theme {
+  --font-sans: "Inter", Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+
+  --color-primary: #ff385c;
+  --color-primary-active: #e00b41;
+  --color-primary-disabled: #ffd1da;
+  --color-error: #c13515;
+  --color-ink: #222222;
+  --color-body: #3f3f3f;
+  --color-muted: #6a6a6a;
+  --color-muted-soft: #929292;
+  --color-hairline: #dddddd;
+  --color-hairline-soft: #ebebeb;
+  --color-border-strong: #c1c1c1;
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-strong: #f2f2f2;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+
+  --shadow-float: rgba(0, 0, 0, 0.02) 0 0 0 1px, rgba(0, 0, 0, 0.04) 0 2px 6px 0, rgba(0, 0, 0, 0.1) 0 4px 8px 0;
+
+  --breakpoint-md: 744px;
+  --breakpoint-lg: 1128px;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+  }
+}
+
+@utility display-xl {
+  font-size: 28px; font-weight: 700; line-height: 1.43;
+}
+@utility display-lg {
+  font-size: 22px; font-weight: 500; line-height: 1.18; letter-spacing: -0.44px;
+}
+@utility display-md {
+  font-size: 21px; font-weight: 700; line-height: 1.43;
+}
+@utility display-sm {
+  font-size: 20px; font-weight: 600; line-height: 1.2; letter-spacing: -0.18px;
+}
+@utility rating-display {
+  font-size: 64px; font-weight: 700; line-height: 1.1; letter-spacing: -1px;
+}
