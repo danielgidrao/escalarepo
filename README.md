@@ -6,6 +6,9 @@ Protótipo da plataforma de troca de plantões médicos (DSW2). Feito em React +
 npm install
 npm run dev
 ```
+## Membros
+Daniel Gidrão - 829511
+Lucas Martinez - 832627
 
 ## Telas
 
